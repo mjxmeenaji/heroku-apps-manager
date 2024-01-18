@@ -11,7 +11,13 @@ class Var(object):
 
     HEROKU_API_KEY = os.environ.get('HEROKU_API_KEY')
 
-    OWNER_ID = "hamza_farahat"
+    RED_ZONE = ['heroku-apps-manager']
+
+    OWNER_ID = ["hamza_farahat", ]
+
+    MESSAGES = {
+        'welcome': "<b><u>Welcome <a href='tg://user?id={}'>{}</a></u></b> !"
+    }
 
 
 

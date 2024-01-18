@@ -1,5 +1,4 @@
 import time
-import traceback
 import threading
 from typing import List, Any
 
@@ -14,7 +13,7 @@ from vars import Var
 status_emojis = ["❌", "✅"]
 
 
-async def get_get_all_apps() -> KeyedListResource:
+async def get_get_all_apps() -> list[Any]:
     """
     function that get all apps in heroku
     :return: list of all apps
@@ -23,7 +22,9 @@ async def get_get_all_apps() -> KeyedListResource:
     heroku_conn = heroku3.from_key(HEROKU_API_KEY)
     apps:  KeyedListResource = heroku_conn.apps(order_by="name", sort="asc")
 
-    return apps
+    new_apps = [app for app in apps if app.name not in Var.RED_ZONE]
+
+    return new_apps
 
 
 def get_app_status(app) -> dict[Any, int]:
@@ -38,7 +39,7 @@ def get_app_status(app) -> dict[Any, int]:
     return {app.name: status}
 
 
-async def get_all_apps_with_status(apps: KeyedListResource) -> dict:
+async def get_all_apps_with_status(apps: list[Any]) -> dict:
     """
     function that get all the apps with there status (dynos status)
     :param apps: all apps
