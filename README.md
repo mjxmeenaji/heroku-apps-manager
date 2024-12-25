@@ -1,5 +1,15 @@
 # Heroku Apps Manager
 
+<p align="center">
+  <img src="https://i.imgur.com/LqyVINf_d.webp?maxwidth=760&fidelity=grand" alt="Heroku Apps Manager Logo" width="300" />
+</p>
+
+<h1 align="center">Heroku Apps Manager</h1>
+
+<p align="center">
+  Manage your Heroku apps easily with this Telegram bot!
+</p>
+
 ## Overview
 Heroku Apps Manager is a Python-based Telegram bot designed to simplify the management of Heroku applications. With this bot, users can:
 
@@ -88,7 +98,7 @@ You can deploy the bot directly to Heroku using the button below:
 
 ## Files Structure
 ```
-project-root/
+heroku-apps-manager/
 ├── manager/
 │   ├── __init__.py          # Bot initialization
 │   ├── callbacks.py       # Telegram bot handlers
