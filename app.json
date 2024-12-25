@@ -1,7 +1,7 @@
 {
   "name": "Heroku Apps Manager",
   "description": "A powerful bot to manage your Heroku applications effortlessly, control dynos, and check app statuses directly from Telegram.",
-  "repository": "https://github.com/terabyte-26/heroku-apps-manager",
+  "repository": "https://github.com/terabyte-26/heroku-apps-manager.git",
   "logo": "https://i.imgur.com/LqyVINf_d.webp?maxwidth=760&fidelity=grand",
   "keywords": [
     "Heroku",
