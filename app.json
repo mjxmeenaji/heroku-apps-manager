@@ -1,0 +1,47 @@
+{
+  "name": "Heroku Apps Manager",
+  "description": "A powerful bot to manage your Heroku applications effortlessly, control dynos, and check app statuses directly from Telegram.",
+  "repository": "https://github.com/your-repository-link",
+  "logo": "https://your-logo-link.com/logo.png",
+  "keywords": [
+    "Heroku",
+    "Apps Manager",
+    "Telegram Bot",
+    "Automation",
+    "Cloud Management"
+  ],
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID from https://my.telegram.org/apps",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API Hash from https://my.telegram.org/apps",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "The bot token from @BotFather on Telegram",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Your Heroku API Key from https://dashboard.heroku.com/account",
+      "required": true
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "standard-1x"
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "scripts": {
+    "postdeploy": "echo 'Heroku Apps Manager has been successfully deployed!'"
+  },
+  "stack": "heroku-22"
+}
