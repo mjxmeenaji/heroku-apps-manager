@@ -75,8 +75,7 @@ This project leverages the Pyrogram library for Telegram bot interactions and th
 ## Deploy to Heroku
 You can deploy the bot directly to Heroku using the button below:
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/terabyte-26/heroku-apps-manager&env[API_ID]=your_telegram_api_id&env[API_HASH]=your_telegram_api_hash&env[BOT_TOKEN]=your_bot_token&env[HEROKU_API_KEY]=your_heroku_api_key)
-
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 ### Steps for Deployment:
 1. Click on the **Deploy to Heroku** button above.
 2. Fill in the required environment variables:
