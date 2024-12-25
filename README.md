@@ -99,14 +99,18 @@ You can deploy the bot directly to Heroku using the button below:
 ```
 heroku-apps-manager/
 ├── manager/
-│   ├── __init__.py          # Bot initialization
-│   ├── callbacks.py       # Telegram bot handlers
-│   ├── helpers.py         # Heroku-related helper functions
-│   └── vars.py            # Configuration and environment variables
-├── main.py                 # Main entry point
-├── requirements.txt        # Python dependencies
-├── Procfile               # Heroku process types
-└── .env                   # Environment variables (not included in repo)
+│   ├── __init__.py              # Bot initialization
+│   └── callbacks.py             # Telegram bot handlers
+│
+├── .env                         # Environment variables (not included in repo)
+├── app.json                     # Heroku app configuration
+├── helpers.py                   # Heroku-related helper functions
+├── heroku_apps_manager.session  # Pyrogram session file (not included in repo)
+├── main.py                      # Main entry point
+├── Procfile                     # Heroku process types
+├── README.md                    # Project overview and instructions
+├── requirements.txt             # Python dependencies
+└── vars.py                      # Configuration and environment variables
 ```
 
 ---
