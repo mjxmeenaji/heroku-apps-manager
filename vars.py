@@ -25,7 +25,7 @@ class Var(object):
 
 
     #----------------<Manager Bot Stuff>------------#
-    RED_ZONE: list[str] = ['heroku-apps-manager']
+    RED_ZONE: list[str] = ['heroku-apps-manager', ]
     OWNER_ID: list[str] = ["hamza_farahat", ]
     MESSAGES: dict[str: str] = {
         'welcome': "<b><u>Welcome <a href='tg://user?id={}'>{}</a></u></b> !"

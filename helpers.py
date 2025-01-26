@@ -75,14 +75,17 @@ async def get_apps_buttons(apps) -> List[List[InlineKeyboardButton]]:
     buttons: List[List[InlineKeyboardButton]] = []
 
     for app_name, app_status in apps.items():
-        buttons.append(
-            [
-                InlineKeyboardButton(
-                    f'{app_name} {status_emojis[app_status]}',
-                    callback_data=f'{app_name}|{app_status}'
-                )
-            ]
-        )
+
+        if app_name not in Var.RED_ZONE:
+
+            buttons.append(
+                [
+                    InlineKeyboardButton(
+                        f'{app_name} {status_emojis[app_status]}',
+                        callback_data=f'{app_name}|{app_status}'
+                    )
+                ]
+            )
 
     return buttons
 
