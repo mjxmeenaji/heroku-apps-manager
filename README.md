@@ -59,6 +59,7 @@ This project leverages the Pyrogram library for Telegram bot interactions and th
 4. **Environment Variables**:
    Create a `.env` file in the project directory and add the following keys:
    ```env
+   ADMIN_ID=your_telegram_id
    API_ID=your_telegram_api_id
    API_HASH=your_telegram_api_hash
    BOT_TOKEN=your_bot_token
@@ -79,6 +80,7 @@ You can deploy the bot directly to Heroku using the button below:
 ### Steps for Deployment:
 1. Click on the **Deploy to Heroku** button above.
 2. Fill in the required environment variables:
+   - **ADMIN_ID**: Your Telegram ID.
    - **API_ID**: Your Telegram API ID.
    - **API_HASH**: Your Telegram API Hash.
    - **BOT_TOKEN**: Token of your Telegram bot.
