@@ -16,6 +16,7 @@ class Var(object):
     API_ID: int = int(os.environ.get('API_ID'))
     API_HASH: str = os.environ.get('API_HASH')
     BOT_TOKEN: str = os.environ.get('BOT_TOKEN')
+    ADMIN_ID: int = int(os.environ.get('ADMIN_ID'))
     #-----------------------------------------------#
 
 
@@ -26,7 +27,6 @@ class Var(object):
 
     #----------------<Manager Bot Stuff>------------#
     RED_ZONE: list[str] = ['heroku-apps-manager', ]
-    OWNER_ID: list[str] = ["hamza_farahat", ]
     MESSAGES: dict[str: str] = {
         'welcome': "<b><u>Welcome <a href='tg://user?id={}'>{}</a></u></b> !"
     }
