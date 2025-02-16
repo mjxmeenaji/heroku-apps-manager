@@ -11,26 +11,26 @@
     "Cloud Management"
   ],
   "env": {
-    "API_ID": {
-      "description": "Your Telegram API ID from https://my.telegram.org/apps",
-      "required": true
-    },
-    "API_HASH": {
-      "description": "Your Telegram API Hash from https://my.telegram.org/apps",
-      "required": true
-    },
-    "BOT_TOKEN": {
-      "description": "The bot token from @BotFather on Telegram",
-      "required": true
-    },
-    "ADMIN_ID": {
-      "description": "Your Telegram ID from  https://t.me/fast_raw_telegram_bot",
-      "required": true
-    },
-    "HEROKU_API_KEY": {
-      "description": "Your Heroku API Key from https://dashboard.heroku.com/account",
-      "required": true
-    }
+      "ADMIN_ID": {
+        "description": "Your Telegram ID from https://t.me/fast_raw_telegram_bot",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Your Telegram API Hash from https://my.telegram.org/apps",
+        "required": true
+      },
+      "API_ID": {
+        "description": "Your Telegram API ID from https://my.telegram.org/apps",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "The bot token from @BotFather on Telegram",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "Your Heroku API Key from https://dashboard.heroku.com/account",
+        "required": true
+      }
   },
   "formation": {
     "worker": {
